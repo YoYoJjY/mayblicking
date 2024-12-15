@@ -1,0 +1,295 @@
+-- Create the button and UI
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- Create a ScreenGui to hold the buttons
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "TripoutGui"
+screenGui.Parent = playerGui
+
+-- Create the "Tripout" button
+local tripoutButton = Instance.new("TextButton")
+tripoutButton.Name = "TripoutButton"
+tripoutButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+tripoutButton.Position = UDim2.new(1, -160, 0, 10)  -- Position the button in the top-right corner
+tripoutButton.Text = "Tripout"
+tripoutButton.TextSize = 20  -- Smaller text size
+tripoutButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+tripoutButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+tripoutButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+tripoutButton.Parent = screenGui
+
+-- Create the "Anaconda2" button
+local anaconda2Button = Instance.new("TextButton")
+anaconda2Button.Name = "Anaconda2Button"
+anaconda2Button.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+anaconda2Button.Position = UDim2.new(1, -160, 0, 55)  -- Position it below the "Tripout" button
+anaconda2Button.Text = "Anaconda2"
+anaconda2Button.TextSize = 20  -- Smaller text size
+anaconda2Button.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+anaconda2Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+anaconda2Button.BackgroundTransparency = 0.3  -- Slight transparency to the background
+anaconda2Button.Parent = screenGui
+
+-- Create the "Breakdown" button
+local breakdownButton = Instance.new("TextButton")
+breakdownButton.Name = "BreakdownButton"
+breakdownButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+breakdownButton.Position = UDim2.new(1, -160, 0, 100)  -- Position below "Anaconda2"
+breakdownButton.Text = "Breakdown"
+breakdownButton.TextSize = 20  -- Smaller text size
+breakdownButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+breakdownButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+breakdownButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+breakdownButton.Parent = screenGui
+
+-- Create the "Freeflow" button
+local freeflowButton = Instance.new("TextButton")
+freeflowButton.Name = "FreeflowButton"
+freeflowButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+freeflowButton.Position = UDim2.new(1, -160, 0, 145)  -- Position below "Breakdown"
+freeflowButton.Text = "Freeflow"
+freeflowButton.TextSize = 20  -- Smaller text size
+freeflowButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+freeflowButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+freeflowButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+freeflowButton.Parent = screenGui
+
+-- Create the "Beggin" button
+local begginButton = Instance.new("TextButton")
+begginButton.Name = "BegginButton"
+begginButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+begginButton.Position = UDim2.new(1, -160, 0, 190)  -- Position below "Freeflow"
+begginButton.Text = "Beggin"
+begginButton.TextSize = 20  -- Smaller text size
+begginButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+begginButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+begginButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+begginButton.Parent = screenGui
+
+-- Create the "Calamity" button
+local CalamityButton = Instance.new("TextButton")
+CalamityButton.Name = "CalamityButton"
+CalamityButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+CalamityButton.Position = UDim2.new(1, -160, 0, 235)  -- Position below "Calamity"
+CalamityButton.Text = "Calamity"
+CalamityButton.TextSize = 20  -- Smaller text size
+CalamityButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+CalamityButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+CalamityButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+CalamityButton.Parent = screenGui
+
+-- Create the "Climb" button
+local ClimbButton = Instance.new("TextButton")
+ClimbButton.Name = "ClimbButton"
+ClimbButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+ClimbButton.Position = UDim2.new(1, -160, 0, 280)  -- Position below "Climb
+ClimbButton.Text = "Climb"
+ClimbButton.TextSize = 20  -- Smaller text size
+ClimbButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+ClimbButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+ClimbButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+ClimbButton.Parent = screenGui
+
+-- Create the "StopAnim" button
+local stopAnimButton = Instance.new("TextButton")
+stopAnimButton.Name = "StopAnimButton"
+stopAnimButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+stopAnimButton.Position = UDim2.new(1, -160, 0, 325)  -- Position below "Climb"
+stopAnimButton.Text = "StopAnim"
+stopAnimButton.TextSize = 20  -- Smaller text size
+stopAnimButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+stopAnimButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+stopAnimButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+stopAnimButton.Parent = screenGui
+
+-- Function to trigger the "Tripout" animations
+local function playAnimations()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:FindFirstChildOfClass('Humanoid')
+
+    if not humanoid then
+        warn("Humanoid not found in character.")
+        return
+    end
+
+    -- Stop existing animations and disable the Animate script
+    for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    character.Animate.Disabled = true
+
+    -- Animation data for the first animation
+    local animation1Data = {
+        ID = "rbxassetid://5915648917", -- First animation ID
+        TimePosition = 2 -- Starting time position for the first animation
+    }
+
+    -- Animation data for the second animation
+    local animation2Data = {
+        ID = "rbxassetid://108417311687435", -- Second animation ID
+        TimePosition = 0 -- Starting time position for the second animation
+    }
+
+    -- Animation data for the third animation
+    local animation3Data = {
+        ID = "rbxassetid://120852155458841", -- Third animation ID
+        TimePosition = 0 -- Starting time position for the third animation
+    }
+
+    -- Create and load animations
+    local animation1 = Instance.new("Animation")
+    animation1.AnimationId = animation1Data.ID
+    local animationTrack1 = humanoid:LoadAnimation(animation1)
+
+    local animation2 = Instance.new("Animation")
+    animation2.AnimationId = animation2Data.ID
+    local animationTrack2 = humanoid:LoadAnimation(animation2)
+
+    local animation3 = Instance.new("Animation")
+    animation3.AnimationId = animation3Data.ID
+    local animationTrack3 = humanoid:LoadAnimation(animation3)
+
+    -- Play animations and freeze them at the desired positions
+    animationTrack1:Play()
+    animationTrack1.TimePosition = animation1Data.TimePosition
+    animationTrack1:AdjustSpeed(0) -- Freeze animation 1
+
+    animationTrack2:Play()
+    animationTrack2.TimePosition = animation2Data.TimePosition
+    animationTrack2:AdjustSpeed(3) -- Freeze animation 2
+
+    animationTrack3:Play()
+    animationTrack3.TimePosition = animation3Data.TimePosition
+    animationTrack3:AdjustSpeed(1) -- Freeze animation 3
+end
+
+-- Function to trigger the "Anaconda2" hug animation
+local function playAnaconda2()
+    local speaker = player  -- This is the player clicking the button
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://15571450952"  -- Hug animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
+-- Function to trigger the "Breakdown" hug animation
+local function playBreakdown()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://83228837001135"  -- Breakdown animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "Freeflow" hug animation
+local function playFreeflow()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://77953251488968"  -- Freeflow animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "Beggin" hug animation
+local function playBeggin()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://123332279844087"  -- Beggin animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "Beggin" hug animation
+local function playCalamity()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://90841854866960"  -- Calamity animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "Climb" hug animation
+local function playClimb()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://18537363391"  -- Climb animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
+    hit.TimePosition = 6.3  -- Set the animation start position
+end
+
+-- Function to stop any playing animations
+local function stopAnimations()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:FindFirstChildOfClass('Humanoid')
+
+    if humanoid then
+        -- Stop all animations that are currently playing
+        for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+            track:Stop()
+        end
+
+        -- Optionally, re-enable the Animate script if you want animations to resume
+        character.Animate.Disabled = false
+    else
+        warn("Humanoid not found in character.")
+    end
+end
+
+-- Connect the button clicks to the respective functions
+tripoutButton.MouseButton1Click:Connect(playAnimations)
+anaconda2Button.MouseButton1Click:Connect(playAnaconda2)
+breakdownButton.MouseButton1Click:Connect(playBreakdown)
+freeflowButton.MouseButton1Click:Connect(playFreeflow)
+begginButton.MouseButton1Click:Connect(playBeggin)
+CalamityButton.MouseButton1Click:Connect(playCalamity)
+ClimbButton.MouseButton1Click:Connect(playClimb)
+stopAnimButton.MouseButton1Click:Connect(stopAnimations)
